@@ -12,5 +12,14 @@ class HotelCost
 
     bool summer = season == "summer";
     bool weekend = dayOfWeek == "weekend";
+
+    if (summer && weekend)
+    {
+      Console.WriteLine("Your stay is probably going to be pretty expensive. It's both peak travel season AND the weekend.");
+    }
+    else
+    {
+      Console.WriteLine("Your stay might be expensive, but it could be worse!");
+    }
   }
 }
